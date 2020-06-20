@@ -1,12 +1,12 @@
 # Apple-Developer
 
-[![Download On Playstore](http://www.google.com.au/images/nav_logo7.png)](https://github.com/AhmadTakkoush/Apple-Developer/blob/master/google-play-badge.png)
+[![Download On Playstore](https://github.com/AhmadTakkoush/Apple-Developer/blob/master/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.ahmadtakkoush.appledeveloper)
 
 ## Description
 
 Apple Developer App to access Apple Developer Forums, Live Events and make an app that has a feel of the official app on iOS but with a diffrent approach.
 
-#####WWDC20
+##### WWDC20
 
 ## How to Install
 
