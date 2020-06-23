@@ -1,10 +1,17 @@
 # Apple-Developer
 
-[![Download On Playstore](https://github.com/AhmadTakkoush/Apple-Developer/blob/master/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.ahmadtakkoush.appledeveloper)
-
 ## Description
 
-Apple Developer App to access Apple Developer Forums, Live Events and make an app that has a feel of the official app on iOS but with a diffrent approach.
+Apple Developer App to access Apple Developer Forums, Live Events and News .
+An app that has a feel of the official app on iOS but with a diffrent approach.
+
+## Navigation
+
+Forums: Webview of the [Apple Developer Forums](https://developer.apple.com/forums/)
+
+Live: Webview of the [Apple Event Stream](https://apple.com/apple-events/event-stream)
+
+News: RSS of the [Apple Developer News](https://www.apple.com/rss/)
 
 ##### WWDC20
 
@@ -16,10 +23,19 @@ Apple Developer App to access Apple Developer Forums, Live Events and make an ap
 3) Click the green play button to run app in debug mode
 
 ## Used Dependencies:
-🔮 [SpinKit](https://github.com/ybq/Android-SpinKit)
 
-## Contributions
-(empty)
+🔮 [SpinKit](https://github.com/ybq/Android-SpinKit)
+🍲 [Jsoup](https://github.com/jhy/jsoup)
+
+## TODO
+
+- [ ] Work on UI
+
+- [ ] Refresh page & Controls
+
+## ScreenShots
+
+(Available Soon)
 
 ### License
 

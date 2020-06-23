@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import fragments.NewsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val homeFragment = HomeFragment()
         val liveFragment = LiveFragment()
-        val comingsoonFragment = ComingSoonFragment()
+        val newsFragment = NewsFragment()
 
         makeCurrentFragment(homeFragment)
 
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.ic_forum -> makeCurrentFragment(homeFragment)
                 R.id.ic_live_tv -> makeCurrentFragment(liveFragment)
-                R.id.ic_help -> makeCurrentFragment(comingsoonFragment)
+                R.id.ic_library -> makeCurrentFragment(newsFragment)
 
             }
             true
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         if (WebView.canGoBack()) {
-            WebView.goBack();
+            WebView.goBack()
         } else {
             super.onBackPressed()
         }
