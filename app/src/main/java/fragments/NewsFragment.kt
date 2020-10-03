@@ -54,8 +54,7 @@ class NewsFragment : Fragment() {
                 val result: String
                 val http = HTTPDataHandler()
                 result = http.GetHTTPDataHandler(params[0])
-                val plainText = Jsoup.parse(result).text()
-                return plainText
+                return result
             }
 
             override fun onPreExecute() {

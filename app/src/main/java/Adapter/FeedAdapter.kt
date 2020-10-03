@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ahmadtakkoush.appledeveloper.R
+import org.jsoup.Jsoup
 
 
 class FeedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener,
@@ -65,7 +66,9 @@ class FeedAdapter(private val rssObject: RSSObject, private val mContext: Contex
 
     override fun onBindViewHolder(holder: FeedViewHolder, position: Int) {
         holder.txtTitle.text = rssObject.items[position].title
-        holder.txtContent.text = rssObject.items[position].content
+        val elements = Jsoup.parse(rssObject.items[position].content).select("p")
+        holder.txtContent.text =
+            if (elements.size > 0) elements[0].text() else rssObject.items[position].content
         holder.txtPubdate.text = rssObject.items[position].pubDate
 
         holder.setItemClickListener(ItemClickListener { view, position, isLongClick ->
